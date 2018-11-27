@@ -10,6 +10,11 @@ public class CodeWordChecker implements StringChecker {
         this.max = max;
         this.symbol = symbol;
     }
+    public CodeWordChecker(String symbol){
+        this.min = 6;
+        this.max = 20;
+        this.symbol = symbol;
+    }
         public boolean isValid (String str){
             return str.length() >= min && str.length() <= max && !str.contains(symbol);
         }
